@@ -12,7 +12,7 @@ Foundation.Abide.defaults.patterns['document'] = /^([0-9]{3}\.?[0-9]{3}\.?[0-9]{
 ```
 
 ## Phone
-Validation for brazilian format telephone and repeating numbers.
+Validation for Brazilian format telephone and repeating numbers.
 ```javascript
 function phoneValidator(
   $el,      /* jQuery element to validate */
