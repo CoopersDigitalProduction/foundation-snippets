@@ -6,7 +6,7 @@ CPF and CNPJ validation.
 ```javascript
 Foundation.Abide.defaults.patterns['document'] = /^([0-9]{3}\.?[0-9]{3}\.?[0-9]{3}\-?[0-9]{2}|[0-9]{2}\.?[0-9]{3}\.?[0-9]{3}\/?[0-9]{4}\-?[0-9]{2})$/;
 ```
-### Usage on HTML:
+### HTML:
 ```html
 <input id="cpf_cnpj" type="text" pattern="document" required>
 ```
@@ -31,7 +31,7 @@ function phoneValidator(
 
 Foundation.Abide.defaults.validators['phone_repetition'] = phoneValidator;
 ```
-### Usage on HTML:
+### HTML:
 ```html
 <input id="phone" type="tel" data-validator="phone_repetition" required>
 ```

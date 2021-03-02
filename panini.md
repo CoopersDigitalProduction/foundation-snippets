@@ -14,7 +14,7 @@ module.exports = function(options) {
   return code.replace(/(<([^>]+)>)/gi, "");
 }
 ```
-### Usage on HTML:
+### HTML:
 ```html
 {{#clearhtml}}{{content}}{{/clearhtml}}
 ```
@@ -28,7 +28,7 @@ module.exports = function(needle, haystack, options) {
   return anchor;
 }
 ```
-### Usage on HTML:
+### HTML:
 ```html
 {{#contains url ../page}}./{{url}}{{/contains}}
 ```
@@ -42,7 +42,7 @@ module.exports = function(needle, haystack, options) {
 }
 ```
 
-### Usage on HTML:
+### HTML:
 ```html
 {{#ifequals type 'condition1,condition2,condition3'}}
   ...
