@@ -1,7 +1,7 @@
 # Panini Helpers
 [Official documentation](https://get.foundation/sites/docs/panini.html#helpers)
 
-## clearhtml.js
+## src/helpers/clearhtml.js
 Remove HTML from strings.
 ```javascript
 module.exports = function(options) {
@@ -19,7 +19,7 @@ module.exports = function(options) {
 {{#clearhtml}}{{content}}{{/clearhtml}}
 ```
 
-## contains.js
+## src/helpers/contains.js
 Checks if a string contains specific text and replaces it.
 In this example, we're checking if the given string has 'page_name.html' text and we're removing it.
 ```javascript
@@ -33,7 +33,7 @@ module.exports = function(needle, haystack, options) {
 {{#contains url ../page}}./{{url}}{{/contains}}
 ```
 
-## ifequals.js
+## src/helpers/ifequals.js
 _Ifequal_ condition with multiple values.
 ```javascript
 module.exports = function(needle, haystack, options) {
