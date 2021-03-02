@@ -2,7 +2,7 @@
 [Official documentation](https://get.foundation/sites/docs/panini.html#helpers)
 
 ## clearhtml.js
-Remove unescaped HTML from strings.
+Remove HTML from strings.
 ```javascript
 module.exports = function(options) {
   let code = options.fn(this)
