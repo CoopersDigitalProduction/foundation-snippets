@@ -2,14 +2,17 @@
 [Official documentation](https://get.foundation/sites/docs/abide.html#adding-custom-pattern-and-validator)
 
 ## CPF / CNPJ
+CPF and CNPJ validation.
 ```javascript
 Foundation.Abide.defaults.patterns['document'] = /^([0-9]{3}\.?[0-9]{3}\.?[0-9]{3}\-?[0-9]{2}|[0-9]{2}\.?[0-9]{3}\.?[0-9]{3}\/?[0-9]{4}\-?[0-9]{2})$/;
 ```
+### Usage on HTML:
 ```html
 <input id="cpf_cnpj" type="text" pattern="document" required>
 ```
 
-## Phone (Brazilian pattern and number repetition)
+## Phone
+Validation for brazilian format telephone and repeating numbers.
 ```javascript
 function phoneValidator(
   $el,      /* jQuery element to validate */
@@ -28,7 +31,7 @@ function phoneValidator(
 
 Foundation.Abide.defaults.validators['phone_repetition'] = phoneValidator;
 ```
-
+### Usage on HTML:
 ```html
 <input id="phone" type="tel" data-validator="phone_repetition" required>
 ```
