@@ -11,6 +11,16 @@ Foundation.Abide.defaults.patterns['document'] = /^([0-9]{3}\.?[0-9]{3}\.?[0-9]{
 <input id="cpf_cnpj" type="text" pattern="document" required>
 ```
 
+## CEP
+CEP validation.
+```javascript
+Foundation.Abide.defaults.patterns['cep'] = /^\d{5}-\d{3}/;
+```
+### HTML:
+```html
+<input id="cep" type="text" pattern="cep" required>
+```
+
 ## Phone
 Validation for Brazilian telephone and repeating numbers.
 ```javascript
