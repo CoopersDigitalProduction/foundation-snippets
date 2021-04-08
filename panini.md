@@ -21,7 +21,7 @@ module.exports = function(options) {
 
 ## src/helpers/contains.js
 Checks if a string contains specific text and replaces it.
-In this example, we're checking if the given string has 'page_name.html' text and we're removing it.
+In this example, we're checking if the given string has 'page_name.html' string and we're removing '.html' from it.
 ```javascript
 module.exports = function(needle, haystack, options) {
   let anchor = needle.replace(haystack + '.html', '');
