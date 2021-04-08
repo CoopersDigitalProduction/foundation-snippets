@@ -44,7 +44,7 @@ module.exports = function(needle, haystack, options) {
 
 ### HTML:
 ```html
-{{#ifequals type 'condition1,condition2,condition3'}}
+{{#ifequals variable 'condition1,condition2,condition3'}}
   ...
 {{/ifequals}}
 ```
