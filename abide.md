@@ -2,7 +2,7 @@
 [Official documentation](https://get.foundation/sites/docs/abide.html#adding-custom-pattern-and-validator)
 
 ## CPF / CNPJ
-CPF and CNPJ validation.
+CPF and CNPJ validation. Requires formatted value (i.e. 000.000.000-00 or 00.000.000/0000-00)
 ```javascript
 Foundation.Abide.defaults.patterns['document'] = /^([0-9]{3}\.?[0-9]{3}\.?[0-9]{3}\-?[0-9]{2}|[0-9]{2}\.?[0-9]{3}\.?[0-9]{3}\/?[0-9]{4}\-?[0-9]{2})$/;
 ```
@@ -12,7 +12,7 @@ Foundation.Abide.defaults.patterns['document'] = /^([0-9]{3}\.?[0-9]{3}\.?[0-9]{
 ```
 
 ## CEP
-CEP validation.
+CEP validation. Requires formatted value (i.e. 00000-000)
 ```javascript
 Foundation.Abide.defaults.patterns['cep'] = /^\d{5}-\d{3}/;
 ```
@@ -22,7 +22,7 @@ Foundation.Abide.defaults.patterns['cep'] = /^\d{5}-\d{3}/;
 ```
 
 ## Phone
-Validation for Brazilian telephone and repeating numbers.
+Validation for Brazilian telephone and repeating numbers. Requires formatted value (i.e. (00) 00000-0000)
 ```javascript
 function phoneValidator(
   $el,      /* jQuery element to validate */
