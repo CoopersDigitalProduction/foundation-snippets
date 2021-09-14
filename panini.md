@@ -61,5 +61,5 @@ module.exports = function(needle, options) {
 ```html
 {{#unless variable}}
   ...
-{{/ifequals}}
+{{/unless}}
 ```
