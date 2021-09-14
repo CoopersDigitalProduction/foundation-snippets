@@ -48,3 +48,18 @@ module.exports = function(needle, haystack, options) {
   ...
 {{/ifequals}}
 ```
+
+## src/helpers/ifequals.js
+Checks if some variable doesn't exists.
+```javascript
+module.exports = function(needle, options) {
+  return needle == undefined ? options.fn(this) : ''
+}
+```
+
+### HTML:
+```html
+{{#unless variable}}
+  ...
+{{/ifequals}}
+```
